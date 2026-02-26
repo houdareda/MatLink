@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Globe, Search, X, Menu, UserCircle, MapPin, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import productsData from "@/data/products.json";
 
 const Header = () => {
+  const pathname = usePathname();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCountryOpen, setIsCountryOpen] = useState(false);
@@ -146,7 +148,7 @@ const Header = () => {
               <Link 
                 href={item.href} 
                 className={`text-sm font-bold transition-colors hover:text-primary whitespace-nowrap ${
-                  item.label === "الرئيسية" ? "text-primary" : "text-foreground/80"
+                  pathname === item.href ? "text-primary" : "text-foreground/80"
                 }`}
               >
                 {item.label}
@@ -300,11 +302,15 @@ const Header = () => {
                 <li key={item.label}>
                   <Link 
                     href={item.href} 
-                    className="flex items-center justify-between text-lg font-bold text-foreground hover:text-primary transition-colors py-2 border-b border-muted group"
+                    className={`flex items-center justify-between text-lg font-bold transition-colors py-2 border-b border-muted group ${
+                      pathname === item.href ? "text-primary" : "text-foreground"
+                    }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span>{item.label}</span>
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div className={`w-1.5 h-1.5 rounded-full bg-primary transition-opacity ${
+                      pathname === item.href ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                    }`}></div>
                   </Link>
                 </li>
               ))}
