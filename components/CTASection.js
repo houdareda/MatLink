@@ -1,4 +1,4 @@
-"use client";
+import Link from "next/link";
 
 const CTASection = () => {
   return (
@@ -25,12 +25,12 @@ const CTASection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-start gap-4">
-                <button className="h-14 px-10 bg-primary text-white rounded-[10px] font-black text-sm hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 flex items-center justify-center min-w-[160px]">
+                <Link href="/register?type=contractor" className="h-14 px-10 bg-primary text-white rounded-[10px] font-black text-sm hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 flex items-center justify-center min-w-[160px]">
                   انضم كمقاول
-                </button>
-                <button className="h-14 px-8 border-2 border-foreground/10 bg-white text-foreground rounded-[10px] font-black text-sm hover:border-black transition-all flex items-center justify-center min-w-[160px]">
+                </Link>
+                <Link href="/register?type=supplier" className="h-14 px-8 border-2 border-foreground/10 bg-white text-foreground rounded-[10px] font-black text-sm hover:border-black transition-all flex items-center justify-center min-w-[160px]">
                   انضم كمورد
-                </button>
+                </Link>
               </div>
             </div>
 

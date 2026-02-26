@@ -17,8 +17,8 @@ const Footer = () => {
   const footerLinks = {
     platform: [
       { label: "من نحن", href: "/about" },
-      { label: "انضم كمورد", href: "/register" },
-      { label: "انضم كمقاول", href: "/register" },
+      { label: "انضم كمورد", href: "/register?type=supplier" },
+      { label: "انضم كمقاول", href: "/register?type=contractor" },
       { label: "الأسئلة الشائعة", href: "/faq" },
     ],
     materials: [
