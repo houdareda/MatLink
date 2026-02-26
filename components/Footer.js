@@ -53,17 +53,17 @@ const Footer = () => {
           
           {/* Brand Info Column */}
           <div className="lg:col-span-4 space-y-8">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-4">
               <img 
                 src="/logo.png" 
                 alt="MatLink Logo" 
-                className="w-12 h-12 lg:w-16 lg:h-16 object-contain hover:scale-110 transition-transform duration-500"
+                className="w-14 h-14 lg:w-20 lg:h-20 object-contain hover:scale-110 transition-transform duration-500"
               />
               <div className="flex flex-col text-right">
-                <span className="text-xl font-black text-white leading-none tracking-tight">
+                <span className="text-xl lg:text-2xl font-black text-white leading-none tracking-tight">
                   Mat<span className="text-primary">Link</span>
                 </span>
-                <span className="text-[9px] text-white/40 font-bold leading-none uppercase mt-1">منصة المشتريات الإنشائية</span>
+                <span className="text-[9px] lg:text-[11px] text-white/40 font-bold leading-none uppercase mt-1.5">منصة المشتريات الإنشائية</span>
               </div>
             </Link>
             

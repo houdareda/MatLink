@@ -129,19 +129,19 @@ const Header = () => {
       {/* Top Accent Border */}
       <div className="h-[3px] w-full bg-accent/20"></div>
       
-      <nav className="container mx-auto px-4 h-20 flex items-center justify-between relative z-50 bg-white">
+      <nav className="container mx-auto px-4 h-20 lg:h-24 flex items-center justify-between relative z-50 bg-white">
         {/* Right Side: Logo */}
-        <Link href="/" className="flex items-center gap-2 lg:gap-3 group shrink-0">
+        <Link href="/" className="flex items-center gap-3 lg:gap-5 group shrink-0">
           <img 
             src="/logo.png" 
             alt="MatLink Logo" 
-            className="w-12 h-12 lg:w-16 lg:h-16 object-contain group-hover:scale-110 transition-transform duration-500"
+            className="w-14 h-14 lg:w-20 lg:h-20 object-contain group-hover:scale-110 transition-transform duration-500"
           />
           <div className="flex flex-col items-start translate-y-0.5" dir="rtl">
-            <span className="text-lg lg:text-xl font-black text-foreground leading-none tracking-tight">
+            <span className="text-lg lg:text-2xl font-black text-foreground leading-none tracking-tight">
               Mat<span className="text-primary">Link</span>
             </span>
-            <span className="text-[7px] lg:text-[9px] text-foreground/40 font-bold leading-none uppercase mt-1">منصة المشتريات الإنشائية</span>
+            <span className="text-[8px] lg:text-[10px] text-foreground/40 font-bold leading-none uppercase mt-1">منصة المشتريات الإنشائية</span>
           </div>
         </Link>
 
@@ -247,23 +247,13 @@ const Header = () => {
               </div>
             </div>
             
-            {/* Login (Desktop Only) */}
-            <Link 
-              href="/login" 
-              className="hidden xl:flex text-foreground/70 transition-colors px-3 py-2 rounded-full hover:bg-muted group items-center"
-            >
-              <span className="font-bold group-hover:text-primary text-sm whitespace-nowrap">تسجيل الدخول</span>
-            </Link>
           </div>
           
-          <div className="h-6 w-px bg-foreground/10 mx-1 hidden xl:block"></div>
-          
-          {/* Register Button */}
           <Link 
-            href="/register" 
+            href="/login" 
             className="bg-primary text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-[8px] lg:rounded-[10px] font-bold text-[11px] lg:text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 whitespace-nowrap"
           >
-            إنشاء حساب
+            تسجيل الدخول
           </Link>
 
           {/* Mobile Menu Toggle */}

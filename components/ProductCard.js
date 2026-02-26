@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
 
       <div className="p-5 text-right flex flex-col flex-1">
         <Link href={`/products/${product.id}`} className="block mb-4 group/text">
-          <h3 className="text-xl font-black text-foreground group-hover:text-primary transition-colors leading-tight mb-2">
+          <h3 className="text-[15px] md:text-[17px] font-black text-foreground group-hover:text-primary transition-colors leading-tight mb-2">
             {product.title}
           </h3>
           <p className="text-xs text-foreground/50 font-bold leading-relaxed line-clamp-2">

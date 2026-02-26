@@ -165,11 +165,11 @@ const FeaturedProducts = () => {
         </div>
 
         {/* Layout Grid */}
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-10">
           {/* Main Content (Products Grid) */}
           <div className="flex-1 order-2">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10">
-              {productsData.slice(0, 9).map((product) => (
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+              {productsData.slice(0, 8).map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>
@@ -183,7 +183,7 @@ const FeaturedProducts = () => {
           </div>
 
           {/* Sidebar (Filters) - Visible only on PC */}
-          <div className="hidden lg:block w-[350px] order-1 shrink-0">
+          <div className="hidden lg:block w-[300px] order-1 shrink-0">
             <SidebarFilters onApply={() => setIsFilterOpen(false)} />
           </div>
         </div>

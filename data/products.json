@@ -59,156 +59,7 @@
       "website": "https://saudisteel.sa"
     }
   },
-  {
-    "id": 11,
-    "title": "حديد تسليح 20 ملم",
-    "category": "حديد",
-    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
-    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
-    "price": "3,750",
-    "image": "/products/item2.jpg",
-    "unit": "طن",
-    "warranty": "ضمان سنة",
-    "pricing": [
-      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
-      { "range": "51+ وحدة", "price": "SAR 3,750" }
-    ],
-    "specs": [
-      { "label": "الطول", "value": "12 متر" },
-      { "label": "القطر", "value": "16 ملم" },
-      { "label": "المعيار", "value": "SASO / EN" },
-      { "label": "درجة الصلب", "value": "G60" }
-    ],
-    "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
-  },
-  {
-    "id": 12,
-    "title": "حديد تسليح 25 ملم",
-    "category": "حديد",
-    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
-    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
-    "price": "3,750",
-    "image": "/products/item2.jpg",
-    "unit": "طن",
-    "warranty": "ضمان سنة",
-    "pricing": [
-      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
-      { "range": "51+ وحدة", "price": "SAR 3,750" }
-    ],
-    "specs": [
-      { "label": "الطول", "value": "12 متر" },
-      { "label": "القطر", "value": "16 ملم" },
-      { "label": "المعيار", "value": "SASO / EN" },
-      { "label": "درجة الصلب", "value": "G60" }
-    ],
-    "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
-  },
-  {
-    "id": 13,
-    "title": "حديد تسليح 30 ملم",
-    "category": "حديد",
-    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
-    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
-    "price": "3,750",
-    "image": "/products/item2.jpg",
-    "unit": "طن",
-    "warranty": "ضمان سنة",
-    "pricing": [
-      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
-      { "range": "51+ وحدة", "price": "SAR 3,750" }
-    ],
-    "specs": [
-      { "label": "الطول", "value": "12 متر" },
-      { "label": "القطر", "value": "16 ملم" },
-      { "label": "المعيار", "value": "SASO / EN" },
-      { "label": "درجة الصلب", "value": "G60" }
-    ],
-    "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
-  },
-  {
-    "id": 14,
-    "title": "حديد تسليح 35 ملم",
-    "category": "حديد",
-    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
-    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
-    "price": "3,750",
-    "image": "/products/item2.jpg",
-    "unit": "طن",
-    "warranty": "ضمان سنة",
-    "pricing": [
-      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
-      { "range": "51+ وحدة", "price": "SAR 3,750" }
-    ],
-    "specs": [
-      { "label": "الطول", "value": "12 متر" },
-      { "label": "القطر", "value": "16 ملم" },
-      { "label": "المعيار", "value": "SASO / EN" },
-      { "label": "درجة الصلب", "value": "G60" }
-    ],
-    "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
-  },
-  {
-    "id": 15,
-    "title": "حديد تسليح 40 ملم",
-    "category": "حديد",
-    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
-    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
-    "price": "3,750",
-    "image": "/products/item2.jpg",
-    "unit": "طن",
-    "warranty": "ضمان سنة",
-    "pricing": [
-      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
-      { "range": "51+ وحدة", "price": "SAR 3,750" }
-    ],
-    "specs": [
-      { "label": "الطول", "value": "12 متر" },
-      { "label": "القطر", "value": "16 ملم" },
-      { "label": "المعيار", "value": "SASO / EN" },
-      { "label": "درجة الصلب", "value": "G60" }
-    ],
-    "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
-  },
+  
   {
     "id": 3,
     "title": "أسمنت بورتلاند عادي",
@@ -439,6 +290,156 @@
       "phone": "+966506667788",
       "email": "orders@modernplumbing.sa",
       "website": "https://modernplumbing.sa"
+    }
+  },
+  {
+    "id": 11,
+    "title": "حديد تسليح 20 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 12,
+    "title": "حديد تسليح 25 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 13,
+    "title": "حديد تسليح 30 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 14,
+    "title": "حديد تسليح 35 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 15,
+    "title": "حديد تسليح 40 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
     }
   }
 ]
