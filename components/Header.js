@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Globe, Search, X, Menu, UserCircle, MapPin, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import productsData from "@/data/products.json";
 
 const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCountryOpen, setIsCountryOpen] = useState(false);
@@ -123,6 +124,19 @@ const Header = () => {
     { label: "المنتجات", href: "/products" },
     { label: "الموردون", href: "/suppliers" },
   ];
+
+  const handleSearchNavigation = (q = searchQuery) => {
+    if (q.trim().length > 0) {
+      router.push(`/search?q=${encodeURIComponent(q)}`);
+      setIsSearchOpen(false);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearchNavigation();
+    }
+  };
 
   return (
     <header className="w-full bg-white sticky top-0 z-50 shadow-sm transition-all duration-300">
@@ -412,8 +426,8 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 py-6 lg:py-10">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-3 lg:gap-4 bg-muted/50 p-3 lg:p-4 rounded-xl lg:rounded-2xl border border-foreground/5 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)] group focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/20 transition-all">
-              <Search className="w-5 h-5 lg:w-6 lg:h-6 text-foreground/20 group-focus-within:text-primary transition-colors" />
+            <div className="flex items-center gap-3 lg:gap-4 bg-white p-3 lg:p-4 rounded-xl lg:rounded-2xl border-2 border-primary/25 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] group focus-within:border-primary transition-all">
+              <Search className="w-5 h-5 lg:w-6 lg:h-6 text-primary group-focus-within:scale-110 transition-transform" />
               <input 
                 type="text" 
                 placeholder="ابحث عن مواد بناء..."
@@ -421,8 +435,12 @@ const Header = () => {
                 autoFocus={isSearchOpen}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={handleKeyDown}
               />
-              <button className="bg-primary text-white px-6 lg:px-8 py-2.5 lg:py-3 rounded-lg lg:rounded-xl font-black text-xs lg:text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+              <button 
+                onClick={() => handleSearchNavigation()}
+                className="bg-primary text-white px-6 lg:px-8 py-2.5 lg:py-3 rounded-lg lg:rounded-xl font-black text-xs lg:text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
+              >
                 بحث
               </button>
             </div>
@@ -436,39 +454,40 @@ const Header = () => {
                     <span className="text-[10px] font-bold text-foreground/40">{filteredResults.length} نتيجة</span>
                   </div>
                   
-                  {/* Results List */}
-                  <div className="bg-white rounded-2xl border border-foreground/5 shadow-xl overflow-hidden divide-y divide-foreground/5">
-                    {filteredResults.length > 0 ? (
-                      filteredResults.slice(0, 5).map((product) => (
-                        <Link 
-                          href={`/products/${product.id}`} 
-                          key={product.id}
-                          className="flex items-center gap-4 p-4 hover:bg-primary/5 transition-colors group"
-                        >
-                          {/* Product Image */}
-                          <div className="w-14 h-14 rounded-xl overflow-hidden border border-foreground/5 group-hover:scale-105 transition-transform shrink-0 shadow-sm">
-                            <img 
-                              src={product.image} 
-                              alt={product.title} 
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                          
-                          <div className="flex-1 text-right">
-                            <h4 className="text-base font-black text-foreground mb-0.5">
-                              {/* Orange first word */}
-                              <span className="text-primary">{product.title.split(' ')[0]}</span>
-                              {' '}{product.title.split(' ').slice(1).join(' ')}
-                            </h4>
-                            <p className="text-xs font-bold text-primary">من {product.price} ر.س</p>
-                          </div>
-                        </Link>
-                      ))
-                    ) : (
-                      <div className="py-12 text-center">
-                        <p className="text-sm font-bold text-foreground/40 italic">لا توجد نتائج لـ "{searchQuery}"</p>
-                      </div>
-                    )}
+                  {/* Results List - Shrunk and Scrollable */}
+                  <div className="bg-white rounded-2xl border border-foreground/5 shadow-xl overflow-hidden">
+                    <div className="max-h-[420px] overflow-y-auto custom-scrollbar divide-y divide-foreground/5">
+                      {filteredResults.length > 0 ? (
+                        filteredResults.slice(0, 8).map((product) => (
+                          <Link 
+                            href={`/products/${product.id}`} 
+                            key={product.id}
+                            className="flex items-center gap-3 p-3 hover:bg-primary/5 transition-colors group"
+                          >
+                            {/* Product Image - Smaller */}
+                            <div className="w-12 h-12 rounded-xl overflow-hidden border border-foreground/5 group-hover:scale-105 transition-transform shrink-0 shadow-sm">
+                              <img 
+                                src={product.image} 
+                                alt={product.title} 
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                            
+                            <div className="flex-1 text-right">
+                              <h4 className="text-sm font-black text-foreground mb-0.5">
+                                <span className="text-primary">{product.title.split(' ')[0]}</span>
+                                {' '}{product.title.split(' ').slice(1).join(' ')}
+                              </h4>
+                              <p className="text-[10px] font-bold text-primary">من {product.price} ر.س</p>
+                            </div>
+                          </Link>
+                        ))
+                      ) : (
+                        <div className="py-12 text-center">
+                          <p className="text-sm font-bold text-foreground/40 italic">لا توجد نتائج لـ "{searchQuery}"</p>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               ) : (

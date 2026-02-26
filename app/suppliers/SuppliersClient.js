@@ -22,7 +22,7 @@ const SuppliersClient = () => {
       <Header />
 
       {/* Premium Header Design (Replaced Blue Section) */}
-      <section className="relative pt-20 pb-32 overflow-hidden bg-white">
+      <section className="relative pt-12 pb-24 overflow-hidden bg-white">
         {/* Abstract Background Accents */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/5 blur-[100px] rounded-full -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
@@ -35,21 +35,21 @@ const SuppliersClient = () => {
                <span className="text-xs font-black text-primary uppercase tracking-widest">شبكة الموردين المعتمدين</span>
             </div>
 
-            <h1 className="text-4xl lg:text-6xl font-black text-[#1e293b] leading-tight mb-6">
+            <h1 className="text-3xl lg:text-5xl font-black text-[#1e293b] leading-tight mb-6">
                تواصل مع <span className="text-primary italic">نخبة الموردين</span> <br />
                في قطاع الإنشاءات
             </h1>
 
-            <p className="text-lg text-foreground/40 font-bold mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base text-foreground/40 font-bold mb-10 max-w-2xl mx-auto leading-relaxed">
                تصفح الموردين الموثوقين المعتمدين في منصة مات لينك، وقارن بين خدماتهم ومنتجاتهم لضمان أفضل توريد لمشروعك.
             </p>
 
-            {/* Premium Search Bar */}
-            <div className="relative max-w-2xl mx-auto group animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            {/* Enhanced Search Bar */}
+            <div className="relative max-w-3xl mx-auto group">
                <div className="absolute inset-0 bg-primary/20 blur-2xl opacity-0 group-focus-within:opacity-100 transition-opacity pointer-events-none"></div>
-               <div className="relative flex items-center bg-white p-2 rounded-[20px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.12)] border border-foreground/5 group-focus-within:border-primary/30 transition-all">
+               <div className="relative flex items-center bg-white p-2 rounded-[22px] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border-2 border-primary/25 group-focus-within:border-primary transition-all">
                   <div className="flex-1 flex items-center pr-4">
-                     <Search className="w-5 h-5 text-foreground/20 group-focus-within:text-primary transition-colors" />
+                     <Search className="w-5 h-5 text-primary group-focus-within:scale-110 transition-transform" />
                      <input 
                         type="text" 
                         placeholder="ابحث عن مورد بالاسم أو المدينة..."
@@ -58,9 +58,8 @@ const SuppliersClient = () => {
                         onChange={(e) => setSearchQuery(e.target.value)}
                      />
                   </div>
-                  <button className="hidden sm:flex items-center gap-2 px-6 py-3 bg-[#F1F5F9] text-foreground/40 rounded-xl font-bold text-xs hover:bg-primary/10 hover:text-primary transition-all">
-                     <SlidersHorizontal className="w-4 h-4" />
-                     <span>تصفية</span>
+                  <button className="bg-primary text-white px-8 py-3 rounded-[16px] font-black text-xs lg:text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-95">
+                    بحث
                   </button>
                </div>
             </div>
@@ -69,7 +68,7 @@ const SuppliersClient = () => {
       </section>
 
       {/* Main Grid Section */}
-      <section className="pb-32 -mt-20 relative z-20">
+      <section className="pb-20 -mt-20 relative z-20">
         <div className="container mx-auto px-4 text-center">
           {/* Results Counter */}
           <div className="flex justify-between items-center mb-10 px-4">
@@ -82,7 +81,7 @@ const SuppliersClient = () => {
 
           {/* Suppliers Grid */}
           {filteredSuppliers.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                {filteredSuppliers.map((supplier) => (
                   <div key={supplier.id} className="animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <SupplierCard supplier={supplier} />

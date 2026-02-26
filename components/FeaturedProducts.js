@@ -50,6 +50,12 @@ const FeaturedProducts = () => {
     }
   };
 
+  const handleSearch = () => {
+    if (searchQuery.trim().length > 0) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery)}`);
+    }
+  };
+
   return (
     <section className="py-16 bg-[#F6F7F9] relative">
       {/* ... (keep existing blur and drawer) */}
@@ -87,27 +93,32 @@ const FeaturedProducts = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row items-center justify-between border-b border-foreground/5 pb-8 mb-12 gap-6">
           <div className="text-right flex-1 order-1">
-            <span className="text-lg font-black text-primary uppercase tracking-[0.2em] block mb-3">سوقنا</span>
-            <h2 className="text-2xl md:text-3xl font-black text-foreground leading-tight">المواد المميزة</h2>
+            <span className="text-[10px] lg:text-xs font-black text-primary uppercase tracking-[0.2em] block mb-3">سوقنا</span>
+            <h2 className="text-xl md:text-2xl font-black text-foreground leading-tight">المواد المميزة</h2>
           </div>
 
           {/* Search Box in the Middle - Enhanced prominence */}
           <div className="flex-2 w-full max-w-xl order-2 relative group px-2" ref={searchBarRef}>
-            <div className="relative">
-              <input 
-                type="text" 
-                placeholder="ابحث عن مواد البناء (مثلاً: حديد، أسمنت، خشب)..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onFocus={() => setIsSearchFocused(true)}
-                className="w-full h-14 pr-14 pl-24 rounded-[16px] bg-white border-2 border-primary/10 text-base font-bold text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all shadow-md group-hover:shadow-lg"
-              />
-              <div className="absolute right-5 top-1/2 -translate-y-1/2">
-                <Search className="w-6 h-6 text-primary/40 group-focus-within:text-primary transition-colors" />
+            <div className="relative group">
+              <div className="relative flex items-center bg-white p-2 rounded-[22px] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border-2 border-primary/25 group-focus-within:border-primary transition-all">
+                <div className="flex-1 flex items-center pr-4">
+                  <Search className="w-5 h-5 text-primary group-focus-within:scale-110 transition-transform" />
+                  <input 
+                    type="text" 
+                    placeholder="ابحث عن مواد البناء (مثلاً: حديد، أسمنت، خشب)..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onFocus={() => setIsSearchFocused(true)}
+                    className="w-full bg-transparent border-none outline-none px-4 py-3 text-sm lg:text-base font-bold placeholder:text-foreground/20 text-foreground"
+                  />
+                </div>
+                <button 
+                  onClick={handleSearch}
+                  className="bg-primary text-white px-8 py-3 rounded-[16px] font-black text-xs lg:text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-95"
+                >
+                  ابحـث
+                </button>
               </div>
-              <button className="absolute left-2.5 top-1/2 -translate-y-1/2 bg-primary text-white h-9 px-5 rounded-[10px] font-black text-xs hover:bg-primary/90 transition-all active:scale-95 shadow-lg shadow-primary/20">
-                ابحـث
-              </button>
             </div>
 
             {/* Search Suggestions Dropdown */}
@@ -118,21 +129,21 @@ const FeaturedProducts = () => {
                 </div>
                 <div className="max-h-[350px] overflow-y-auto custom-scrollbar divide-y divide-foreground/5">
                   {filteredResults.length > 0 ? (
-                    filteredResults.slice(0, 6).map((product) => (
+                    filteredResults.slice(0, 8).map((product) => (
                       <Link 
                         href={`/products/${product.id}`} 
                         key={product.id}
-                        className="flex items-center gap-4 p-4 hover:bg-primary/5 transition-colors group/item"
+                        className="flex items-center gap-3 p-3 hover:bg-primary/5 transition-colors group/item"
                       >
-                        <div className="w-14 h-14 rounded-xl overflow-hidden border border-foreground/5 group-hover/item:scale-105 transition-transform shrink-0 shadow-sm bg-muted/30">
+                        <div className="w-12 h-12 rounded-xl overflow-hidden border border-foreground/5 group-hover/item:scale-105 transition-transform shrink-0 shadow-sm bg-muted/30">
                           <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
                         </div>
                         <div className="flex-1 text-right">
-                          <h4 className="text-base font-black text-foreground mb-0.5">
+                          <h4 className="text-sm font-black text-foreground mb-0.5">
                             <span className="text-primary">{product.title.split(' ')[0]}</span>
                             {' '}{product.title.split(' ').slice(1).join(' ')}
                           </h4>
-                          <p className="text-xs font-bold text-primary">من {product.price} ر.س</p>
+                          <p className="text-[10px] font-bold text-primary">من {product.price} ر.س</p>
                         </div>
                       </Link>
                     ))
@@ -176,9 +187,12 @@ const FeaturedProducts = () => {
             
             {/* Load More Placeholder */}
             <div className="mt-20 flex justify-center">
-                <button className="px-12 h-12 rounded-[12px] border-2 border-foreground/5 font-black text-foreground/40 text-sm hover:border-primary/30 hover:text-primary transition-all">
+                <Link 
+                  href="/products" 
+                  className="px-12 h-12 rounded-[12px] border-2 border-foreground/5 font-black text-foreground/40 text-sm hover:border-primary/30 hover:text-primary transition-all flex items-center justify-center bg-white"
+                >
                     عرض المزيد من المنتجات
-                </button>
+                </Link>
             </div>
           </div>
 
