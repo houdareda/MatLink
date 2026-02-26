@@ -1,0 +1,444 @@
+[
+  {
+    "id": 1,
+    "title": "حديد تسليح 12 ملم",
+    "category": "حديد",
+    "description": "حديد تسليح قياسي عالي الجودة للأسقف وجسور المباني السكنية، يتميز بمرونة عالية وقوة شد ممتازة.",
+    "detailedDescription": "حديد تسليح مطابق للمواصفات السعودية SASO، مصنع محلياً بأعلى معايير الجودة. يُستخدم في جميع أنواع المنشآت السكنية والتجارية، ويتميز بمقاومته العالية للصدأ والتآكل.",
+    "price": "2,900",
+    "image": "/products/item1.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 100 وحدة", "price": "SAR 3,200" },
+      { "range": "101+ وحدة", "price": "SAR 2,900" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "12 ملم" },
+      { "label": "المعيار", "value": "SASO" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 2,
+    "title": "حديد تسليح 16 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 11,
+    "title": "حديد تسليح 20 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 12,
+    "title": "حديد تسليح 25 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 13,
+    "title": "حديد تسليح 30 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 14,
+    "title": "حديد تسليح 35 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 15,
+    "title": "حديد تسليح 40 ملم",
+    "category": "حديد",
+    "description": "قضبان حديد تسليح عالية الجودة للبنية التحتية الثقيلة وأساسات المباني الشاهقة، مطابق للمواصفات العالمية.",
+    "detailedDescription": "حديد تسليح قُطر 16 ملم مخصص للأعمال الإنشائية الثقيلة والأساسات العميقة. يتوافق مع المواصفات الأوروبية والسعودية ويخضع لاختبارات جودة صارمة.",
+    "price": "3,750",
+    "image": "/products/item2.jpg",
+    "unit": "طن",
+    "warranty": "ضمان سنة",
+    "pricing": [
+      { "range": "1 - 50 وحدة", "price": "SAR 4,100" },
+      { "range": "51+ وحدة", "price": "SAR 3,750" }
+    ],
+    "specs": [
+      { "label": "الطول", "value": "12 متر" },
+      { "label": "القطر", "value": "16 ملم" },
+      { "label": "المعيار", "value": "SASO / EN" },
+      { "label": "درجة الصلب", "value": "G60" }
+    ],
+    "pdfUrl": "/files/catalog.pdf",
+    "supplier": {
+      "name": "شركة الحديد السعودية",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966501234567",
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    }
+  },
+  {
+    "id": 3,
+    "title": "أسمنت بورتلاند عادي",
+    "category": "خرسانة",
+    "description": "أسمنت بورتلاند عادي عاليه القوة (درجة 42.5). أكياس 50 كجم، مناسب لجميع الأعمال الإنشائية والصبات.",
+    "detailedDescription": "أسمنت بورتلاند عادي OPC من إنتاج مصنع الخليج للخرسانة، يتميز بقوة ضغط عالية ومقاومة ممتازة للعوامل الجوية. مناسب للأساسات والأعمدة والبلاطات.",
+    "price": "18",
+    "image": "/products/item3.jpg",
+    "unit": "كيس 50 كجم",
+    "warranty": "ضمان 6 أشهر",
+    "pricing": [
+      { "range": "1 - 500 كيس", "price": "SAR 20" },
+      { "range": "501+ كيس", "price": "SAR 18" }
+    ],
+    "specs": [
+      { "label": "الوزن", "value": "50 كجم" },
+      { "label": "الدرجة", "value": "42.5N" },
+      { "label": "المعيار", "value": "ASTM C150" },
+      { "label": "النوع", "value": "بورتلاند عادي (OPC)" }
+    ],
+    "supplier": {
+      "name": "مصنع الخليج للخرسانة",
+      "location": "جدة, SA",
+      "verified": true,
+      "phone": "+966509876543",
+      "email": "sales@gulfconcrete.sa",
+      "website": "https://gulfconcrete.sa"
+    }
+  },
+  {
+    "id": 4,
+    "title": "حصى كونكريت 3/4",
+    "category": "ركام",
+    "description": "حصى طبيعي نقي عالي الجودة لخلطات الخرسانة المسلحة، يتميز بصلابة ممتازة وتداخل جيد.",
+    "detailedDescription": "حصى كونكريت مقاس 3/4 بوصة مغسول ومُعالج، خالي من الشوائب والمواد العضوية. مثالي لإنتاج خرسانة عالية الجودة للمشاريع الإنشائية الكبرى.",
+    "price": "120",
+    "image": "/products/item4.jpg",
+    "unit": "متر مكعب",
+    "warranty": "بدون ضمان",
+    "pricing": [
+      { "range": "1 - 50 م³", "price": "SAR 140" },
+      { "range": "51+ م³", "price": "SAR 120" }
+    ],
+    "specs": [
+      { "label": "المقاس", "value": "3/4 بوصة" },
+      { "label": "النوع", "value": "طبيعي مغسول" },
+      { "label": "الصلابة", "value": "عالية" },
+      { "label": "المعيار", "value": "ASTM C33" }
+    ],
+    "supplier": {
+      "name": "مؤسسة الركام الوطنية",
+      "location": "الدمام, SA",
+      "verified": true,
+      "phone": "+966551112233",
+      "email": "info@nationalaggregate.sa",
+      "website": "https://nationalaggregate.sa"
+    }
+  },
+  {
+    "id": 5,
+    "title": "رمل بناء ناعم",
+    "category": "ركام",
+    "description": "رمل مغسول ونقي مخصص لأعمال اللياسة والتشطيبات الداخلية، خالي من الشوائب والأملاح.",
+    "detailedDescription": "رمل بناء ناعم مغسول ثلاث مرات لإزالة جميع الشوائب، مثالي لأعمال اللياسة والبلاط والتشطيبات الداخلية والخارجية. يتميز بنعومة ممتازة وتوزيع حبيبي متجانس.",
+    "price": "85",
+    "image": "/products/item5.jpg",
+    "unit": "متر مكعب",
+    "warranty": "بدون ضمان",
+    "pricing": [
+      { "range": "1 - 30 م³", "price": "SAR 100" },
+      { "range": "31+ م³", "price": "SAR 85" }
+    ],
+    "specs": [
+      { "label": "النوع", "value": "ناعم مغسول" },
+      { "label": "الاستخدام", "value": "لياسة وتشطيبات" },
+      { "label": "النقاء", "value": "99%" },
+      { "label": "المعيار", "value": "ASTM C33" }
+    ],
+    "supplier": {
+      "name": "مؤسسة الركام الوطنية",
+      "location": "الدمام, SA",
+      "verified": true,
+      "phone": "+966551112233",
+      "email": "info@nationalaggregate.sa",
+      "website": "https://nationalaggregate.sa"
+    }
+  },
+  {
+    "id": 6,
+    "title": "بلوك أسمنتي 20*40",
+    "category": "بناء",
+    "description": "بلوك أسمنتي مفرغ عازل للصوت والحرارة، قوة ضغط عالية ودقة في المقاسات للمباني العصرية.",
+    "detailedDescription": "بلوك أسمنتي مقاس 20×40 سم مفرغ، مصنوع بتقنية الكبس الهيدروليكي لضمان دقة الأبعاد وقوة الضغط. يتميز بعزل حراري وصوتي ممتاز.",
+    "price": "2.5",
+    "image": "/products/item6.jpg",
+    "unit": "حبة",
+    "warranty": "بدون ضمان",
+    "pricing": [
+      { "range": "1 - 5000 حبة", "price": "SAR 3" },
+      { "range": "5001+ حبة", "price": "SAR 2.5" }
+    ],
+    "specs": [
+      { "label": "المقاس", "value": "20×40 سم" },
+      { "label": "النوع", "value": "مفرغ" },
+      { "label": "قوة الضغط", "value": "70 كجم/سم²" },
+      { "label": "الوزن", "value": "15 كجم" }
+    ],
+    "supplier": {
+      "name": "مصنع البناء المتقدم",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966504443322",
+      "email": "sales@advbuilding.sa",
+      "website": "https://advbuilding.sa"
+    }
+  },
+  {
+    "id": 7,
+    "title": "خشب بلاي وود 18 ملم",
+    "category": "أخشاب",
+    "description": "خشب بلاي وود مغطى بطبقة عازلة، مثالي لأعمال الشدة الخشبية وصب الخرسانة المتكرر.",
+    "detailedDescription": "ألواح بلاي وود بسمك 18 ملم مغلفة بالفينول المقاوم للماء. تتحمل الاستخدام المتكرر في أعمال الشدات الخشبية وصب الخرسانة حتى 10 مرات.",
+    "price": "145",
+    "image": "/products/item7.jpg",
+    "unit": "لوح",
+    "warranty": "بدون ضمان",
+    "pricing": [
+      { "range": "1 - 100 لوح", "price": "SAR 160" },
+      { "range": "101+ لوح", "price": "SAR 145" }
+    ],
+    "specs": [
+      { "label": "السمك", "value": "18 ملم" },
+      { "label": "المقاس", "value": "244×122 سم" },
+      { "label": "التغليف", "value": "فينول مقاوم للماء" },
+      { "label": "عدد الاستخدامات", "value": "حتى 10 مرات" }
+    ],
+    "supplier": {
+      "name": "مؤسسة الأخشاب المتحدة",
+      "location": "جدة, SA",
+      "verified": false,
+      "phone": "+966507778899",
+      "email": "info@unitedwood.sa",
+      "website": "https://unitedwood.sa"
+    }
+  },
+  {
+    "id": 8,
+    "title": "طوب أحمر فخاري",
+    "category": "بناء",
+    "description": "طوب أحمر مصنوع من الفخار الطبيعي، يتميز بخفة الوزن والعزل الحراري الفائق للمباني.",
+    "detailedDescription": "طوب أحمر فخاري مصنع من الطين الطبيعي بدرجة حرارة 1000°C. خفيف الوزن ومقاوم للرطوبة، مثالي للجدران الداخلية والخارجية مع عزل حراري وصوتي متفوق.",
+    "price": "1.8",
+    "image": "/products/item8.jpg",
+    "unit": "حبة",
+    "warranty": "بدون ضمان",
+    "pricing": [
+      { "range": "1 - 10,000 حبة", "price": "SAR 2.2" },
+      { "range": "10,001+ حبة", "price": "SAR 1.8" }
+    ],
+    "specs": [
+      { "label": "المقاس", "value": "25×12×6.5 سم" },
+      { "label": "الوزن", "value": "2.5 كجم" },
+      { "label": "العزل الحراري", "value": "ممتاز" },
+      { "label": "مقاومة الماء", "value": "عالية" }
+    ],
+    "supplier": {
+      "name": "مصنع البناء المتقدم",
+      "location": "الرياض, SA",
+      "verified": true,
+      "phone": "+966504443322",
+      "email": "sales@advbuilding.sa",
+      "website": "https://advbuilding.sa"
+    }
+  },
+  {
+    "id": 9,
+    "title": "أسلاك كهربائية 4 ملم",
+    "category": "كهرباء",
+    "description": "أسلاك نحاسية معزولة عالية الجودة، مخصصة للتمديدات الكهربائية المنزلية والأحمال المتوسطة.",
+    "detailedDescription": "أسلاك نحاسية نقية بعزل PVC مزدوج مقاوم للحرارة حتى 70°C. مخصصة للاستخدام المنزلي والتجاري، تتوافق مع معايير السلامة السعودية.",
+    "price": "210",
+    "image": "/products/item9.jpg",
+    "unit": "لفة 100 متر",
+    "warranty": "ضمان 3 سنوات",
+    "pricing": [
+      { "range": "1 - 20 لفة", "price": "SAR 230" },
+      { "range": "21+ لفة", "price": "SAR 210" }
+    ],
+    "specs": [
+      { "label": "المقاس", "value": "4 ملم²" },
+      { "label": "المادة", "value": "نحاس نقي" },
+      { "label": "العزل", "value": "PVC مزدوج" },
+      { "label": "الطول", "value": "100 متر/لفة" }
+    ],
+    "supplier": {
+      "name": "مؤسسة النور للكهرباء",
+      "location": "الدمام, SA",
+      "verified": true,
+      "phone": "+966503334455",
+      "email": "info@alnourelectric.sa",
+      "website": "https://alnourelectric.sa"
+    }
+  },
+  {
+    "id": 10,
+    "title": "مواسير PVC 4 بوصة",
+    "category": "سباكة",
+    "description": "مواسير صرف صحي بلاستيكية عالية التحمل، مقاومة للكيماويات والضغط، سهلة التركيب.",
+    "detailedDescription": "مواسير PVC بقطر 4 بوصة مخصصة لشبكات الصرف الصحي والمياه. مقاومة للكيماويات والأحماض، خفيفة الوزن وسهلة التركيب والقطع.",
+    "price": "45",
+    "image": "/products/item10.jpg",
+    "unit": "ماسورة 6 متر",
+    "warranty": "ضمان سنتين",
+    "pricing": [
+      { "range": "1 - 100 ماسورة", "price": "SAR 50" },
+      { "range": "101+ ماسورة", "price": "SAR 45" }
+    ],
+    "specs": [
+      { "label": "القطر", "value": "4 بوصة (110 ملم)" },
+      { "label": "الطول", "value": "6 متر" },
+      { "label": "الضغط", "value": "10 بار" },
+      { "label": "المعيار", "value": "ASTM D2729" }
+    ],
+    "supplier": {
+      "name": "مؤسسة السباكة الحديثة",
+      "location": "الخبر, SA",
+      "verified": true,
+      "phone": "+966506667788",
+      "email": "orders@modernplumbing.sa",
+      "website": "https://modernplumbing.sa"
+    }
+  }
+]
