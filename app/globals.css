@@ -30,12 +30,7 @@
   --font-heading: var(--font-cairo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #121212;
-    --foreground: #f8fafc;
-  }
-}
+
 
 body {
   background: var(--background);
