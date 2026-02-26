@@ -55,7 +55,7 @@ const RegisterClient = () => {
   };
 
   return (
-    <main className="min-h-screen bg-[#F8FAFC] flex flex-col font-black rtl">
+    <main className="min-h-screen bg-[#F1F5F9] flex flex-col font-black rtl">
       
       {/* Back to Home */}
       <Link href="/" className="fixed top-8 right-8 flex items-center gap-2 text-foreground/40 hover:text-primary transition-all group z-50">

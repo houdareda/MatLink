@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
   const compared = isCompared(product.id);
 
   return (
-    <div className="group bg-white rounded-xl border border-foreground/[0.08] hover:border-primary/40 transition-all duration-700 overflow-hidden hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.2)] flex flex-col h-full shadow-[0_15px_50px_-15px_rgba(0,0,0,0.1)]">
+    <div className="bg-white rounded-2xl border border-foreground/5 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full overflow-hidden">
       {/* Product Image Link */}
       <Link href={`/products/${product.id}`} className="relative h-full">
         <div className="relative aspect-[4/3] bg-gray-200 flex items-center justify-center overflow-hidden">

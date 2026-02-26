@@ -1,0 +1,56 @@
+[
+  {
+    "id": "s1",
+    "name": "شركة الحديد السعودية",
+    "location": "الرياض، SA",
+    "description": "شركة رائدة في تصنيع وتوريد الحديد والصلب للمشاريع الكبرى في المملكة.",
+    "isVerified": true,
+    "productCount": 24,
+    "category": "حديد"
+  },
+  {
+    "id": "s2",
+    "name": "مؤسسة النور للكهرباء",
+    "location": "الدمام، SA",
+    "description": "تخصصنا هو توريد جميع الأدوات والمعدات الكهربائية بأعلى معايير الجودة.",
+    "isVerified": true,
+    "productCount": 156,
+    "category": "كهرباء"
+  },
+  {
+    "id": "s3",
+    "name": "مصنع الخليج للخرسانة",
+    "location": "جدة، SA",
+    "description": "نحن متخصصون في الخرسانة الجاهزة والأسمنت المعتمد للمشاريع الإنشائية.",
+    "isVerified": true,
+    "productCount": 12,
+    "category": "خرسانة"
+  },
+  {
+    "id": "s4",
+    "name": "العالمية لأنظمة السباكة",
+    "location": "مكة، SA",
+    "description": "توريد وتركيب أحدث أنظمة السباكة والصرف الصحي للمباني الذكية.",
+    "isVerified": false,
+    "productCount": 89,
+    "category": "سباكة"
+  },
+  {
+    "id": "s5",
+    "name": "رواد الأخشاب والمقاولات",
+    "location": "المدينة، SA",
+    "description": "توفير جميع أنواع الأخشاب الطبيعية والمعالجة للمقاولين والنجارين.",
+    "isVerified": true,
+    "productCount": 42,
+    "category": "أخشاب"
+  },
+  {
+    "id": "s6",
+    "name": "طوب المستقبل للصناعة",
+    "location": "الرياض، SA",
+    "description": "صناعة وتوريد الطوب الأحمر والأسمنتي بأبعاد قياسية وجودة لا تضاهى.",
+    "isVerified": true,
+    "productCount": 18,
+    "category": "طوب"
+  }
+]

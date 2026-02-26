@@ -418,7 +418,7 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 py-6 lg:py-10">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-3 lg:gap-4 bg-muted/50 p-3 lg:p-4 rounded-xl lg:rounded-2xl border border-foreground/5 shadow-inner group focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+            <div className="flex items-center gap-3 lg:gap-4 bg-muted/50 p-3 lg:p-4 rounded-xl lg:rounded-2xl border border-foreground/5 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)] group focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/20 transition-all">
               <Search className="w-5 h-5 lg:w-6 lg:h-6 text-foreground/20 group-focus-within:text-primary transition-colors" />
               <input 
                 type="text" 

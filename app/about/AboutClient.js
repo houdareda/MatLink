@@ -108,7 +108,7 @@ const AboutClient = () => {
                       desc: "تقليل الوقت الضائع في المفاوضات التقليدية والاتصالات المتكررة. مات لينك تضمن لك دورة توريد أسرع بنسبة 40% وتحسيناً ملحوظاً في الربحية لجميع الأطراف."
                     }
                   ].map((step, idx) => (
-                    <div key={idx} className="flex gap-8 items-start relative group p-6 rounded-2xl hover:bg-[#F8FAFC] transition-colors duration-300">
+                    <div key={idx} className="flex gap-8 items-start relative group p-6 rounded-2xl hover:bg-[#F1F5F9] transition-colors duration-300">
                        <div className={`w-14 h-14 ${step.bg} rounded-2xl flex items-center justify-center shrink-0 shadow-lg ${step.shadow} z-10 transform group-hover:scale-110 transition-transform`}>
                           {step.icon}
                        </div>

@@ -24,7 +24,7 @@ const SidebarFilters = ({ onApply }) => {
   };
 
   return (
-    <aside className="w-full bg-white rounded-[12px] border border-foreground/8 p-6 space-y-6 sticky top-24 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.12)]">
+    <aside className="w-full bg-white rounded-[12px] border border-foreground/8 p-6 space-y-6 sticky top-24 shadow-xl shadow-[0_30px_70px_-15px_rgba(0,0,0,0.35)] translate-z-0">
       {/* Sidebar Header */}
       <div className="flex items-center justify-between border-b border-foreground/5 pb-4">
         <h3 className="text-lg font-black text-foreground">التصنيفات</h3>
@@ -48,7 +48,7 @@ const SidebarFilters = ({ onApply }) => {
           <div 
             onClick={() => toggleDropdown("category")}
             className={`w-full h-11 rounded-[10px] px-4 flex items-center justify-between font-bold text-xs transition-all cursor-pointer border ${
-                activeDropdown === "category" ? "border-primary bg-white shadow-xl shadow-primary/5" : "bg-[#f8f9fa] border-transparent text-foreground/70 hover:border-primary/20"
+                activeDropdown === "category" ? "border-primary bg-white shadow-xl shadow-primary/5" : "bg-[#F1F5F9] border-transparent text-foreground/70 hover:border-primary/20"
             }`}
           >
             <span className={selectedCategory !== "جميع الفئات" ? "text-foreground" : ""}>{selectedCategory}</span>
@@ -59,7 +59,7 @@ const SidebarFilters = ({ onApply }) => {
             <div className="absolute top-[calc(100%+8px)] left-0 w-full bg-white border border-foreground/10 rounded-[10px] shadow-2xl z-30 overflow-hidden animate-fade-in">
               <div 
                 onClick={() => handleSelect(setSelectedCategory, "جميع الفئات")}
-                className={`flex items-center justify-between p-3 font-black text-xs cursor-pointer transition-colors ${selectedCategory === "جميع الفئات" ? "bg-primary text-white" : "hover:bg-muted"}`}
+                className={`flex items-center justify-between p-3 font-black text-xs cursor-pointer transition-colors ${selectedCategory === "جميع الفئات" ? "bg-primary text-white" : "hover:bg-muted/80"}`}
               >
                 <span>جميع الفئات</span>
                 {selectedCategory === "جميع الفئات" && <Check className="w-3.5 h-3.5" />}
@@ -69,7 +69,7 @@ const SidebarFilters = ({ onApply }) => {
                   <div 
                     key={cat} 
                     onClick={() => handleSelect(setSelectedCategory, cat)}
-                    className={`px-4 py-2.5 text-right font-bold cursor-pointer transition-colors border-b border-foreground/5 last:border-0 ${selectedCategory === cat ? "text-primary bg-primary/5" : "text-foreground/70 hover:bg-muted"}`}
+                    className={`px-4 py-2.5 text-right font-bold cursor-pointer transition-colors border-b border-foreground/5 last:border-0 ${selectedCategory === cat ? "text-primary bg-primary/5" : "text-foreground/70 hover:bg-muted/80"}`}
                   >
                     {cat}
                   </div>
@@ -87,7 +87,7 @@ const SidebarFilters = ({ onApply }) => {
           <div 
             onClick={() => toggleDropdown("supplier")}
             className={`w-full h-11 rounded-[10px] px-4 flex items-center justify-between font-bold text-xs transition-all cursor-pointer border ${
-                activeDropdown === "supplier" ? "border-primary bg-white shadow-xl shadow-primary/5" : "bg-[#f8f9fa] border-transparent text-foreground/70 hover:border-primary/20"
+                activeDropdown === "supplier" ? "border-primary bg-white shadow-xl shadow-primary/5" : "bg-[#F1F5F9] border-transparent text-foreground/70 hover:border-primary/20"
             }`}
           >
             <span className={selectedSupplier !== "جميع الموردين" ? "text-foreground" : ""}>{selectedSupplier}</span>
@@ -98,7 +98,7 @@ const SidebarFilters = ({ onApply }) => {
             <div className="absolute top-[calc(100%+8px)] left-0 w-full bg-white border border-foreground/10 rounded-[10px] shadow-2xl z-30 overflow-hidden animate-fade-in">
               <div 
                 onClick={() => handleSelect(setSelectedSupplier, "جميع الموردين")}
-                className={`flex items-center justify-between p-3 font-black text-xs cursor-pointer transition-colors ${selectedSupplier === "جميع الموردين" ? "bg-primary text-white" : "hover:bg-muted"}`}
+                className={`flex items-center justify-between p-3 font-black text-xs cursor-pointer transition-colors ${selectedSupplier === "جميع الموردين" ? "bg-primary text-white" : "hover:bg-muted/80"}`}
               >
                 <span>جميع الموردين</span>
                 {selectedSupplier === "جميع الموردين" && <Check className="w-3.5 h-3.5" />}
@@ -108,7 +108,7 @@ const SidebarFilters = ({ onApply }) => {
                   <div 
                     key={sup} 
                     onClick={() => handleSelect(setSelectedSupplier, sup)}
-                    className={`px-4 py-2.5 text-right font-bold cursor-pointer transition-colors border-b border-foreground/5 last:border-0 ${selectedSupplier === sup ? "text-primary bg-primary/5" : "text-foreground/70 hover:bg-muted"}`}
+                    className={`px-4 py-2.5 text-right font-bold cursor-pointer transition-colors border-b border-foreground/5 last:border-0 ${selectedSupplier === sup ? "text-primary bg-primary/5" : "text-foreground/70 hover:bg-muted/80"}`}
                   >
                     {sup}
                   </div>
@@ -155,7 +155,7 @@ const SidebarFilters = ({ onApply }) => {
           <div 
             onClick={() => toggleDropdown("sort")}
             className={`w-full h-11 rounded-[10px] px-4 flex items-center justify-between font-bold text-xs transition-all cursor-pointer border ${
-                activeDropdown === "sort" ? "border-primary bg-white shadow-xl shadow-primary/5" : "bg-[#f8f9fa] border-transparent text-foreground/70 hover:border-primary/20"
+                activeDropdown === "sort" ? "border-primary bg-white shadow-xl shadow-primary/5" : "bg-[#F1F5F9] border-transparent text-foreground/70 hover:border-primary/20"
             }`}
           >
             <span>{selectedSort}</span>
@@ -169,7 +169,7 @@ const SidebarFilters = ({ onApply }) => {
                   <div 
                     key={sort} 
                     onClick={() => handleSelect(setSelectedSort, sort)}
-                    className={`px-4 py-3 text-right font-bold cursor-pointer transition-colors border-b border-foreground/5 last:border-0 ${selectedSort === sort ? "bg-primary text-white" : "hover:bg-muted text-foreground/70"}`}
+                    className={`px-4 py-3 text-right font-bold cursor-pointer transition-colors border-b border-foreground/5 last:border-0 ${selectedSort === sort ? "bg-primary text-white" : "hover:bg-muted/80 text-foreground/70"}`}
                   >
                     {sort}
                   </div>

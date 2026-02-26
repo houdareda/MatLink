@@ -39,7 +39,7 @@ const CompareClient = () => {
 
   if (selectedProducts.length === 0) {
     return (
-      <main className="min-h-screen bg-[#F6F7F9]">
+      <main className="min-h-screen bg-[#F1F5F9]">
         <Header />
         <div className="container mx-auto px-4 py-32 text-center">
           <div className="max-w-md mx-auto space-y-8">
@@ -63,7 +63,7 @@ const CompareClient = () => {
   }
 
   return (
-    <main className="min-h-screen bg-[#F6F7F9] flex flex-col font-black">
+    <main className="min-h-screen bg-[#F1F5F9] flex flex-col font-black">
       <Header />
       
       <div className="flex-1 w-full pb-20">
@@ -97,7 +97,7 @@ const CompareClient = () => {
         `}</style>
 
         <div className="mx-auto md:px-4 lg:px-8 max-w-7xl -mt-10 relative z-20">
-          <div className="bg-white md:rounded-[24px] border-y md:border border-foreground/5 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] overflow-hidden">
+          <div className="bg-white md:rounded-[24px] border-y md:border border-foreground/5 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] overflow-hidden">
             
             <div className="overflow-x-auto custom-scrollbar">
               <div className="min-w-max" style={{ width: `calc(var(--label-w) + ${selectedProducts.length * 280}px)` }}>
