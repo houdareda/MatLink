@@ -132,11 +132,15 @@ const Header = () => {
       <nav className="container mx-auto px-4 h-20 flex items-center justify-between relative z-50 bg-white">
         {/* Right Side: Logo */}
         <Link href="/" className="flex items-center gap-2 lg:gap-3 group shrink-0">
-          <div className="w-8 h-8 lg:w-10 lg:h-10 bg-primary rounded-lg lg:rounded-xl rotate-45 flex items-center justify-center transform group-hover:rotate-90 transition-transform shadow-lg shadow-primary/20">
-            <div className="w-3 h-3 lg:w-4 lg:h-4 border-2 border-white -rotate-45"></div>
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="MatLink Logo" 
+            className="w-12 h-12 lg:w-16 lg:h-16 object-contain group-hover:scale-110 transition-transform duration-500"
+          />
           <div className="flex flex-col items-start translate-y-0.5" dir="rtl">
-            <span className="text-lg lg:text-xl font-black text-foreground leading-none tracking-tight">Mat Link</span>
+            <span className="text-lg lg:text-xl font-black text-foreground leading-none tracking-tight">
+              Mat<span className="text-primary">Link</span>
+            </span>
             <span className="text-[7px] lg:text-[9px] text-foreground/40 font-bold leading-none uppercase mt-1">منصة المشتريات الإنشائية</span>
           </div>
         </Link>
@@ -403,7 +407,7 @@ const Header = () => {
                 </div>
               </div>
               
-              <p className="text-[10px] text-foreground/30 font-bold uppercase text-center tracking-widest pt-6">Mat Link &copy; 2026</p>
+              <p className="text-[10px] text-foreground/30 font-bold uppercase text-center tracking-widest pt-6">MatLink &copy; 2026</p>
             </div>
           </div>
         </div>

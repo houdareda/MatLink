@@ -15,6 +15,9 @@ const inter = Inter({
 export const metadata = {
   title: "مات لينك | MatLink",
   description: "منصة مات لينك المتكاملة",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 import { CompareProvider } from "@/context/CompareContext";
