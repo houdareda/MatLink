@@ -55,7 +55,7 @@ const RegisterClient = () => {
     // Simulate Registration
     setTimeout(() => {
       if (accountType === "supplier") {
-        window.location.href = "/supplier/profile-setup";
+        window.location.href = "/setup-profile";
       } else {
         window.location.href = "/";
       }

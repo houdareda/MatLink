@@ -14,6 +14,8 @@ import {
   Building2,
   PackageCheck
 } from "lucide-react";
+import AboutSection from "@/components/AboutSection";
+import CTASection from "@/components/CTASection";
 
 const AboutClient = () => {
   return (
@@ -38,13 +40,13 @@ const AboutClient = () => {
               </p>
             </div>
             <div className="flex-1 relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-[4/3] group">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-4/3 group">
                 <img 
                   src="/about_hero_image.png" 
                   alt="About Hero" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e293b]/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-[#1e293b]/50 to-transparent"></div>
               </div>
               {/* Floating Stat */}
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-foreground/5 animate-bounce-subtle">
@@ -222,6 +224,9 @@ const AboutClient = () => {
         </div>
       </section>
 
+      <AboutSection />
+      <CTASection />
+      
       <Footer />
     </div>
   );
