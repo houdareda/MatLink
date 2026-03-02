@@ -12,7 +12,7 @@ const SuppliersClient = () => {
   
   const filteredSuppliers = useMemo(() => {
     return suppliersData.filter(s => 
-      s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      s.nameAr.toLowerCase().includes(searchQuery.toLowerCase()) ||
       s.location.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }, [searchQuery]);

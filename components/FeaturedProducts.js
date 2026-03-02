@@ -177,22 +177,11 @@ const FeaturedProducts = () => {
 
         {/* Layout Grid */}
         <div className="flex flex-col lg:flex-row gap-10">
-          {/* Main Content (Products Grid) */}
           <div className="flex-1 order-2">
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
               {productsData.slice(0, 8).map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
-            </div>
-            
-            {/* Load More Placeholder */}
-            <div className="mt-20 flex justify-center">
-                <Link 
-                  href="/products" 
-                  className="px-12 h-12 rounded-[12px] border-2 border-foreground/5 font-black text-foreground/40 text-sm hover:border-primary/30 hover:text-primary transition-all flex items-center justify-center bg-white"
-                >
-                    عرض المزيد من المنتجات
-                </Link>
             </div>
           </div>
 

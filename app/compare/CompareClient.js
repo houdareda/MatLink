@@ -48,7 +48,7 @@ const CompareClient = () => {
             </div>
             <div className="space-y-4">
               <h1 className="text-3xl font-black text-foreground">لم يتم اختيار منتجات</h1>
-              <p className="text-foreground/40 font-bold">يرجى العودة لصفحة المنتجات واختيار منتجين على الأقل للمقارنة بينهما.</p>
+              <p className="text-foreground/40 font-bold">يرجى العودة لتصفح المواد واختيار منتجين على الأقل للمقارنة بينهما.</p>
             </div>
             <Link href="/#products">
               <button className="bg-primary text-white px-10 h-14 rounded-2xl font-black text-sm hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 active:scale-95">

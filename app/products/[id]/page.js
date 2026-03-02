@@ -1,4 +1,5 @@
 import productsData from "@/data/products.json";
+import suppliersData from "@/data/suppliers.json"; // [MODIFY]
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductDetailClient from "./ProductDetailClient";
@@ -25,11 +26,14 @@ export default async function ProductPage({ params }) {
   const product = productsData.find((p) => String(p.id) === id);
   if (!product) notFound();
 
+  // [MODIFY] Find the related supplier
+  const supplier = suppliersData.find((s) => s.id === product.supplierId);
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <Header />
       <main className="grow">
-        <ProductDetailClient product={product} />
+        <ProductDetailClient product={product} supplier={supplier} />
       </main>
       <Footer />
     </div>

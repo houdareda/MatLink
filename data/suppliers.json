@@ -1,56 +1,228 @@
 [
   {
-    "id": "s1",
-    "name": "شركة الحديد السعودية",
-    "location": "الرياض، SA",
-    "description": "شركة رائدة في تصنيع وتوريد الحديد والصلب للمشاريع الكبرى في المملكة.",
-    "isVerified": true,
-    "productCount": 24,
-    "category": "حديد"
+    "id": 1,
+    "nameAr": "شركة الحديد السعودية",
+    "nameEn": "Saudi Steel Co.",
+    "logo": "https://images.unsplash.com/photo-1566933261937-236b8568c07e?q=80&w=200&auto=format&fit=crop",
+    "description": "نحن رواد صناعة الحديد والصلب في المملكة العربية السعودية، نقدم منتجات عالية الجودة مطابقة للمواصفات العالمية لخدمة قطاع الإنشاءات.",
+    "country": "المملكة العربية السعودية",
+    "verified": true,
+    "contact": {
+      "email": "info@saudisteel.sa",
+      "website": "https://saudisteel.sa"
+    },
+    "branches": [
+      {
+        "id": "br1",
+        "nameAr": "الفرع الرئيسي - الرياض",
+        "address": "المنطقة الصناعية الثانية، الرياض",
+        "phone": "+966501234567",
+        "whatsapp": "+966501234567",
+        "mapLink": "https://goo.gl/maps/example1"
+      },
+      {
+        "id": "br2",
+        "nameAr": "فرع المنطقة الغربية - جدة",
+        "address": "حي المستودعات، جدة",
+        "phone": "+966507654321",
+        "whatsapp": "+966507654321",
+        "mapLink": "https://goo.gl/maps/example2"
+      }
+    ],
+    "documents": {
+      "profilePdf": "/files/company_profile.pdf",
+      "isoCertificates": ["/files/iso9001.pdf"],
+      "qualityCertificates": ["/files/saso_cert.pdf"],
+      "previousApprovals": [],
+      "catalogs": ["/files/steel_catalog.pdf"]
+    }
   },
   {
-    "id": "s2",
-    "name": "مؤسسة النور للكهرباء",
-    "location": "الدمام، SA",
-    "description": "تخصصنا هو توريد جميع الأدوات والمعدات الكهربائية بأعلى معايير الجودة.",
-    "isVerified": true,
-    "productCount": 156,
-    "category": "كهرباء"
+    "id": 2,
+    "nameAr": "مصنع الخليج للخرسانة",
+    "nameEn": "Gulf Concrete Factory",
+    "logo": "https://images.unsplash.com/photo-1590486803833-ffc470144f5f?q=80&w=200&auto=format&fit=crop",
+    "description": "متخصصون في إنتاج أفضل أنواع الخرسانة والأسمنت بورتلاند، نستخدم أحدث التقنيات لضمان قوة واستدامة مشاريعكم.",
+    "country": "المملكة العربية السعودية",
+    "verified": true,
+    "contact": {
+      "email": "sales@gulfconcrete.sa",
+      "website": "https://gulfconcrete.sa"
+    },
+    "branches": [
+      {
+        "id": "br1",
+        "nameAr": "فرع جدة (المصنع الرئيسي)",
+        "address": "طريق الليث، جدة",
+        "phone": "+966509876543",
+        "whatsapp": "+966509876543",
+        "mapLink": "https://goo.gl/maps/example3"
+      }
+    ],
+    "documents": {
+      "profilePdf": "/files/concrete_profile.pdf",
+      "isoCertificates": [],
+      "qualityCertificates": ["/files/quality_cert.pdf"],
+      "previousApprovals": ["/files/muncipality_approval.pdf"],
+      "catalogs": []
+    }
   },
   {
-    "id": "s3",
-    "name": "مصنع الخليج للخرسانة",
-    "location": "جدة، SA",
-    "description": "نحن متخصصون في الخرسانة الجاهزة والأسمنت المعتمد للمشاريع الإنشائية.",
-    "isVerified": true,
-    "productCount": 12,
-    "category": "خرسانة"
+    "id": 3,
+    "nameAr": "مؤسسة الركام الوطنية",
+    "nameEn": "National Aggregate Est.",
+    "logo": "https://images.unsplash.com/photo-1541888941255-081d746efccd?q=80&w=200&auto=format&fit=crop",
+    "description": "نقدم أجود أنواع الحصى والرمل والركام الطبيعي المغسول والمصنف، لضمان أعلى معايير الجودة في خلطات الخرسانة.",
+    "country": "المملكة العربية السعودية",
+    "verified": true,
+    "contact": {
+      "email": "info@nationalaggregate.sa",
+      "website": "https://nationalaggregate.sa"
+    },
+    "branches": [
+      {
+        "id": "br1",
+        "nameAr": "فرع الدمام",
+        "address": "المنطقة الصناعية ب، الدمام",
+        "phone": "+966551112233",
+        "whatsapp": "+966551112233",
+        "mapLink": ""
+      }
+    ],
+    "documents": {
+      "profilePdf": "/files/aggregate_profile.pdf",
+      "isoCertificates": [],
+      "qualityCertificates": [],
+      "previousApprovals": [],
+      "catalogs": ["/files/materials_list.pdf"]
+    }
   },
   {
-    "id": "s4",
-    "name": "العالمية لأنظمة السباكة",
-    "location": "مكة، SA",
-    "description": "توريد وتركيب أحدث أنظمة السباكة والصرف الصحي للمباني الذكية.",
-    "isVerified": false,
-    "productCount": 89,
-    "category": "سباكة"
+    "id": 4,
+    "nameAr": "مصنع البناء المتقدم",
+    "nameEn": "Advanced Building Factory",
+    "logo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=200&auto=format&fit=crop",
+    "description": "مصنع رائد في إنتاج البلوك الأسمنتي والطوب الأحمر الفخاري، نجمع بين المتانة والعزل الحراري في منتجاتنا.",
+    "country": "المملكة العربية السعودية",
+    "verified": true,
+    "contact": {
+      "email": "sales@advbuilding.sa",
+      "website": "https://advbuilding.sa"
+    },
+    "branches": [
+      {
+        "id": "br1",
+        "nameAr": "فرع الرياض الرئيسي",
+        "address": "حي الشفا، الرياض",
+        "phone": "+966504443322",
+        "whatsapp": "+966504443322",
+        "mapLink": ""
+      }
+    ],
+    "documents": {
+      "profilePdf": "/files/building_profile.pdf",
+      "isoCertificates": ["/files/iso_cert.pdf"],
+      "qualityCertificates": [],
+      "previousApprovals": [],
+      "catalogs": []
+    }
   },
   {
-    "id": "s5",
-    "name": "رواد الأخشاب والمقاولات",
-    "location": "المدينة، SA",
-    "description": "توفير جميع أنواع الأخشاب الطبيعية والمعالجة للمقاولين والنجارين.",
-    "isVerified": true,
-    "productCount": 42,
-    "category": "أخشاب"
+    "id": 5,
+    "nameAr": "مؤسسة الأخشاب المتحدة",
+    "nameEn": "United Wood Est.",
+    "logo": "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=200&auto=format&fit=crop",
+    "description": "نورد أجود أنواع الأخشاب والبلاي وود المخصص لأعمال البناء والتشطيب، بأسعار تنافسية وجودة عالمية.",
+    "country": "المملكة العربية السعودية",
+    "verified": false,
+    "contact": {
+      "email": "info@unitedwood.sa",
+      "website": "https://unitedwood.sa"
+    },
+    "branches": [
+      {
+        "id": "br1",
+        "nameAr": "فرع جدة",
+        "address": "الخمرة، جدة",
+        "phone": "+966507778899",
+        "whatsapp": "+966507778899",
+        "mapLink": ""
+      }
+    ],
+    "documents": {
+      "profilePdf": "/files/wood_profile.pdf",
+      "isoCertificates": [],
+      "qualityCertificates": [],
+      "previousApprovals": [],
+      "catalogs": []
+    }
   },
   {
-    "id": "s6",
-    "name": "طوب المستقبل للصناعة",
-    "location": "الرياض، SA",
-    "description": "صناعة وتوريد الطوب الأحمر والأسمنتي بأبعاد قياسية وجودة لا تضاهى.",
-    "isVerified": true,
-    "productCount": 18,
-    "category": "طوب"
+    "id": 6,
+    "nameAr": "مؤسسة النور للكهرباء",
+    "nameEn": "Al-Noor Electricity Est.",
+    "logo": "https://images.unsplash.com/photo-1621905252507-b354bcadc0e4?q=80&w=200&auto=format&fit=crop",
+    "description": "وجهتكم الأولى لجميع مستلزمات الكهرباء والأسلاك والتوصيلات الإنشائية المطابقة لأحدث معايير السلامة.",
+    "country": "المملكة العربية السعودية",
+    "verified": true,
+    "contact": {
+      "email": "info@alnourelectric.sa",
+      "website": "https://alnourelectric.sa"
+    },
+    "branches": [
+      {
+        "id": "br1",
+        "nameAr": "فرع الدمام الصناعية",
+        "address": "طريق الميناء، الدمام",
+        "phone": "+966503334455",
+        "whatsapp": "+966503334455",
+        "mapLink": ""
+      }
+    ],
+    "documents": {
+      "profilePdf": "/files/electric_profile.pdf",
+      "isoCertificates": [],
+      "qualityCertificates": [],
+      "previousApprovals": [],
+      "catalogs": []
+    }
+  },
+  {
+    "id": 7,
+    "nameAr": "مؤسسة السباكة الحديثة",
+    "nameEn": "Modern Plumbing Est.",
+    "logo": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=200&auto=format&fit=crop",
+    "description": "نقدم حلولاً متكاملة لأعمال السباكة والصرف الصحي، من مواصير PVC إلى أدوات التحكم في المياه.",
+    "country": "المملكة العربية السعودية",
+    "verified": true,
+    "contact": {
+      "email": "orders@modernplumbing.sa",
+      "website": "https://modernplumbing.sa"
+    },
+    "branches": [
+      {
+        "id": "br1",
+        "nameAr": "فرع الخبر",
+        "address": "حي البايونية، الخبر",
+        "phone": "+966506667788",
+        "whatsapp": "+966506667788",
+        "mapLink": ""
+      },
+      {
+        "id": "br2",
+        "nameAr": "فرع الأحساء",
+        "address": "حي المبرز، الأحساء",
+        "phone": "+966506662211",
+        "whatsapp": "+966506662211",
+        "mapLink": ""
+      }
+    ],
+    "documents": {
+      "profilePdf": "/files/plumbing_profile.pdf",
+      "isoCertificates": [],
+      "qualityCertificates": [],
+      "previousApprovals": [],
+      "catalogs": []
+    }
   }
 ]

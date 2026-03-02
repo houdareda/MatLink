@@ -33,6 +33,18 @@ const LoginClient = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Login Attempt:", formData);
+    
+    // Simulate Login and check if user is supplier
+    const isSupplier = formData.email.includes("supplier") || formData.email.includes("saudisteel");
+    
+    setTimeout(() => {
+      if (isSupplier) {
+        // Redirect to dashboard (or setup if first time)
+        window.location.href = "/supplier/dashboard";
+      } else {
+        window.location.href = "/";
+      }
+    }, 1000);
   };
 
   return (

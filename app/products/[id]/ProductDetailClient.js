@@ -20,10 +20,12 @@ import {
   ChevronLeft,
   ChevronRight,
   ArrowLeft,
-  ArrowRight
+  ArrowRight,
+  MessageSquare,
+  Building2
 } from "lucide-react";
 
-const ProductDetailClient = ({ product }) => {
+const ProductDetailClient = ({ product, supplier }) => {
   const { toggleCompare, isCompared } = useCompare();
   const compared = isCompared(product.id);
 
@@ -39,7 +41,7 @@ const ProductDetailClient = ({ product }) => {
         <div className="flex items-center gap-2 text-sm font-bold text-foreground/40 mb-10">
           <Link href="/" className="hover:text-primary transition-colors">الرئيسية</Link>
           <ChevronLeft className="w-3.5 h-3.5" />
-          <Link href="/#products" className="hover:text-primary transition-colors">المنتجات</Link>
+          <span className="text-foreground/40">المنتجات</span>
           <ChevronLeft className="w-3.5 h-3.5" />
           <span className="text-foreground/60">{product.category}</span>
         </div>
@@ -80,7 +82,7 @@ const ProductDetailClient = ({ product }) => {
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-3">
               <a 
-                href={`tel:${product.supplier.phone}`}
+                href={`tel:${supplier?.contact?.phone}`}
                 className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-black text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-95"
               >
                 <Phone className="w-4 h-4" />
@@ -156,51 +158,60 @@ const ProductDetailClient = ({ product }) => {
         </div>
 
         {/* Supplier Section */}
-        <div className="bg-white rounded-2xl border border-foreground/5 overflow-hidden shadow-sm p-6 lg:p-8">
-          <h3 className="font-black text-foreground text-lg mb-6 text-right">المورد</h3>
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="bg-white rounded-[32px] border border-foreground/5 overflow-hidden shadow-sm p-6 lg:p-10">
+          <div className="flex items-center justify-between mb-8 border-b border-foreground/5 pb-6">
+            <h3 className="font-black text-foreground text-xl">المورد</h3>
+            <Link 
+              href={`/suppliers/${supplier?.id}`}
+              className="text-xs font-black text-primary hover:underline flex items-center gap-1"
+            >
+              عرض ملف الشركة
+              <ChevronLeft className="w-3 h-3" />
+            </Link>
+          </div>
+          
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             {/* Supplier Info */}
-            <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-xl bg-muted/50 border border-foreground/5 flex items-center justify-center">
-                <FileText className="w-6 h-6 text-foreground/20" />
+            <Link href={`/suppliers/${supplier?.id}`} className="flex items-center gap-6 group">
+              <div className="w-20 h-20 rounded-[24px] bg-muted/30 border border-foreground/5 flex items-center justify-center overflow-hidden group-hover:border-primary/20 transition-all">
+                {supplier?.logo ? (
+                  <img src={supplier.logo} alt={supplier.nameAr} className="w-full h-full object-cover" />
+                ) : (
+                  <Building2 className="w-8 h-8 text-foreground/20" />
+                )}
               </div>
               <div className="text-right">
-                <div className="flex items-center gap-2">
-                  <h4 className="font-black text-foreground text-base">{product.supplier.name}</h4>
-                  {product.supplier.verified && (
-                    <span className="flex items-center gap-1 text-[10px] font-black text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">
+                <div className="flex items-center gap-2 mb-1">
+                  <h4 className="font-black text-foreground text-xl group-hover:text-primary transition-colors">
+                    {supplier?.nameAr || "شركة غير معرفة"}
+                  </h4>
+                  {supplier?.verified && (
+                    <span className="flex items-center gap-1 text-[10px] font-black text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
                       <CheckCircle2 className="w-3 h-3" />
                       موثق
                     </span>
                   )}
                 </div>
-                <p className="text-xs font-bold text-foreground/40 mt-0.5">📍 {product.supplier.location}</p>
+                <p className="text-sm font-bold text-foreground/40">📍 {supplier?.location}</p>
               </div>
-            </div>
+            </Link>
             
             {/* Supplier Actions */}
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-wrap items-center gap-4">
               <a 
-                href={`tel:${product.supplier.phone}`}
-                className="flex items-center gap-2 bg-muted/50 border border-foreground/5 px-4 py-2.5 rounded-xl font-bold text-xs text-foreground/60 hover:bg-primary/5 hover:border-primary/20 hover:text-primary transition-all"
+                href={`tel:${supplier?.contact?.phone}`}
+                className="flex items-center gap-3 bg-white border-2 border-foreground/5 px-6 py-3.5 rounded-2xl font-black text-sm text-foreground/60 hover:border-primary/30 hover:text-primary hover:bg-primary/5 transition-all shadow-sm"
               >
                 <Phone className="w-4 h-4" />
-                <span dir="ltr">{product.supplier.phone}</span>
+                <span dir="ltr">{supplier?.contact?.phone}</span>
               </a>
               <a 
-                href={`mailto:${product.supplier.email}`}
-                className="flex items-center gap-2 bg-muted/50 border border-foreground/5 px-4 py-2.5 rounded-xl font-bold text-xs text-foreground/60 hover:bg-primary/5 hover:border-primary/20 hover:text-primary transition-all"
-              >
-                <Mail className="w-4 h-4" />
-                بريد إلكتروني
-              </a>
-              <a 
-                href={product.supplier.website}
+                href={`https://wa.me/${supplier?.contact?.whatsapp}`}
                 target="_blank"
-                className="flex items-center gap-2 bg-muted/50 border border-foreground/5 px-4 py-2.5 rounded-xl font-bold text-xs text-foreground/60 hover:bg-primary/5 hover:border-primary/20 hover:text-primary transition-all"
+                className="flex items-center gap-3 bg-emerald-500 text-white px-6 py-3.5 rounded-2xl font-black text-sm hover:bg-emerald-600 transition-all shadow-lg shadow-emerald-500/20 active:scale-95"
               >
-                <Globe className="w-4 h-4" />
-                الموقع
+                <MessageSquare className="w-4 h-4" />
+                واتساب
               </a>
             </div>
           </div>

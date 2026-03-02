@@ -121,7 +121,6 @@ const Header = () => {
   const navLinks = [
     { label: "الرئيسية", href: "/" },
     { label: "عن المنصة", href: "/about" },
-    { label: "المنتجات", href: "/products" },
     { label: "الموردون", href: "/suppliers" },
   ];
 

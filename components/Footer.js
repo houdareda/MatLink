@@ -22,10 +22,10 @@ const Footer = () => {
       { label: "الأسئلة الشائعة", href: "/faq" },
     ],
     materials: [
-      { label: "حديد تسليح", href: "/products?category=حديد" },
-      { label: "أسمنت وخرسانة", href: "/products?category=خرسانة" },
-      { label: "أدوات كهربائية", href: "/products?category=كهرباء" },
-      { label: "أدوات سباكة", href: "/products?category=سباكة" },
+      { label: "حديد تسليح", href: "/search?q=حديد" },
+      { label: "أسمنت وخرسانة", href: "/search?q=خرسانة" },
+      { label: "أدوات كهربائية", href: "/search?q=كهرباء" },
+      { label: "أدوات سباكة", href: "/search?q=سباكة" },
     ],
     support: [
       { label: "مركز المساعدة", href: "/help" },

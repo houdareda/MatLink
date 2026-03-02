@@ -51,7 +51,15 @@ const RegisterClient = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Submitted:", { ...formData, accountType });
-    // Handle registration logic here
+    
+    // Simulate Registration
+    setTimeout(() => {
+      if (accountType === "supplier") {
+        window.location.href = "/supplier/profile-setup";
+      } else {
+        window.location.href = "/";
+      }
+    }, 1500);
   };
 
   return (

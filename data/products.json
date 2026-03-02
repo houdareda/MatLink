@@ -20,14 +20,7 @@
       { "label": "درجة الصلب", "value": "G60" }
     ],
     "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
+    "supplierId": 1
   },
   {
     "id": 2,
@@ -50,16 +43,8 @@
       { "label": "درجة الصلب", "value": "G60" }
     ],
     "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
+    "supplierId": 1
   },
-  
   {
     "id": 3,
     "title": "أسمنت بورتلاند عادي",
@@ -80,14 +65,7 @@
       { "label": "المعيار", "value": "ASTM C150" },
       { "label": "النوع", "value": "بورتلاند عادي (OPC)" }
     ],
-    "supplier": {
-      "name": "مصنع الخليج للخرسانة",
-      "location": "جدة, SA",
-      "verified": true,
-      "phone": "+966509876543",
-      "email": "sales@gulfconcrete.sa",
-      "website": "https://gulfconcrete.sa"
-    }
+    "supplierId": 2
   },
   {
     "id": 4,
@@ -109,14 +87,7 @@
       { "label": "الصلابة", "value": "عالية" },
       { "label": "المعيار", "value": "ASTM C33" }
     ],
-    "supplier": {
-      "name": "مؤسسة الركام الوطنية",
-      "location": "الدمام, SA",
-      "verified": true,
-      "phone": "+966551112233",
-      "email": "info@nationalaggregate.sa",
-      "website": "https://nationalaggregate.sa"
-    }
+    "supplierId": 3
   },
   {
     "id": 5,
@@ -138,14 +109,7 @@
       { "label": "النقاء", "value": "99%" },
       { "label": "المعيار", "value": "ASTM C33" }
     ],
-    "supplier": {
-      "name": "مؤسسة الركام الوطنية",
-      "location": "الدمام, SA",
-      "verified": true,
-      "phone": "+966551112233",
-      "email": "info@nationalaggregate.sa",
-      "website": "https://nationalaggregate.sa"
-    }
+    "supplierId": 3
   },
   {
     "id": 6,
@@ -167,14 +131,7 @@
       { "label": "قوة الضغط", "value": "70 كجم/سم²" },
       { "label": "الوزن", "value": "15 كجم" }
     ],
-    "supplier": {
-      "name": "مصنع البناء المتقدم",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966504443322",
-      "email": "sales@advbuilding.sa",
-      "website": "https://advbuilding.sa"
-    }
+    "supplierId": 4
   },
   {
     "id": 7,
@@ -196,14 +153,7 @@
       { "label": "التغليف", "value": "فينول مقاوم للماء" },
       { "label": "عدد الاستخدامات", "value": "حتى 10 مرات" }
     ],
-    "supplier": {
-      "name": "مؤسسة الأخشاب المتحدة",
-      "location": "جدة, SA",
-      "verified": false,
-      "phone": "+966507778899",
-      "email": "info@unitedwood.sa",
-      "website": "https://unitedwood.sa"
-    }
+    "supplierId": 5
   },
   {
     "id": 8,
@@ -225,14 +175,7 @@
       { "label": "العزل الحراري", "value": "ممتاز" },
       { "label": "مقاومة الماء", "value": "عالية" }
     ],
-    "supplier": {
-      "name": "مصنع البناء المتقدم",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966504443322",
-      "email": "sales@advbuilding.sa",
-      "website": "https://advbuilding.sa"
-    }
+    "supplierId": 4
   },
   {
     "id": 9,
@@ -254,14 +197,7 @@
       { "label": "العزل", "value": "PVC مزدوج" },
       { "label": "الطول", "value": "100 متر/لفة" }
     ],
-    "supplier": {
-      "name": "مؤسسة النور للكهرباء",
-      "location": "الدمام, SA",
-      "verified": true,
-      "phone": "+966503334455",
-      "email": "info@alnourelectric.sa",
-      "website": "https://alnourelectric.sa"
-    }
+    "supplierId": 6
   },
   {
     "id": 10,
@@ -283,14 +219,7 @@
       { "label": "الضغط", "value": "10 بار" },
       { "label": "المعيار", "value": "ASTM D2729" }
     ],
-    "supplier": {
-      "name": "مؤسسة السباكة الحديثة",
-      "location": "الخبر, SA",
-      "verified": true,
-      "phone": "+966506667788",
-      "email": "orders@modernplumbing.sa",
-      "website": "https://modernplumbing.sa"
-    }
+    "supplierId": 7
   },
   {
     "id": 11,
@@ -313,14 +242,7 @@
       { "label": "درجة الصلب", "value": "G60" }
     ],
     "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
+    "supplierId": 1
   },
   {
     "id": 12,
@@ -343,14 +265,7 @@
       { "label": "درجة الصلب", "value": "G60" }
     ],
     "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
+    "supplierId": 1
   },
   {
     "id": 13,
@@ -373,14 +288,7 @@
       { "label": "درجة الصلب", "value": "G60" }
     ],
     "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
+    "supplierId": 1
   },
   {
     "id": 14,
@@ -403,14 +311,7 @@
       { "label": "درجة الصلب", "value": "G60" }
     ],
     "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
+    "supplierId": 1
   },
   {
     "id": 15,
@@ -433,13 +334,6 @@
       { "label": "درجة الصلب", "value": "G60" }
     ],
     "pdfUrl": "/files/catalog.pdf",
-    "supplier": {
-      "name": "شركة الحديد السعودية",
-      "location": "الرياض, SA",
-      "verified": true,
-      "phone": "+966501234567",
-      "email": "info@saudisteel.sa",
-      "website": "https://saudisteel.sa"
-    }
+    "supplierId": 1
   }
 ]
