@@ -344,8 +344,8 @@ const AddProductClient = () => {
             <div className="lg:col-span-4 space-y-8">
               
               {/* Box 4: Image Upload */}
-              <div className="bg-white rounded-[32px] p-8 shadow-sm border border-foreground/5 space-y-8 sticky top-28">
-                <div className="flex items-center gap-4 border-b border-foreground/5 pb-6">
+              <div className="bg-white rounded-[32px] p-6 shadow-sm border border-foreground/5 space-y-4 sticky top-28">
+                <div className="flex items-center gap-4 border-b border-foreground/5 pb-3">
                   <div className="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center">
                     <ImageIcon className="w-6 h-6 text-primary" />
                   </div>
@@ -369,7 +369,7 @@ const AddProductClient = () => {
                     </div>
                   </div>
                 ) : (
-                  <label className="aspect-3/2 rounded-[24px] border-2 border-dashed border-foreground/10 flex flex-col items-center justify-center gap-4 hover:bg-[#F1F5F9] hover:border-primary/30 cursor-pointer transition-all group py-12">
+                  <label className="aspect-3/2 rounded-[24px] border-2 border-dashed border-foreground/10 flex flex-col items-center justify-center gap-4 hover:bg-[#F1F5F9] hover:border-primary/30 cursor-pointer transition-all group py-6">
                     <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center group-hover:scale-110 transition-all">
                        <ImageIcon className="w-8 h-8 text-primary/30" />
                     </div>
@@ -382,8 +382,8 @@ const AddProductClient = () => {
                 )}
 
                 {/* Box 5: Pricing */}
-                <div className="pt-8 border-t border-foreground/5">
-                  <div className="flex items-center gap-3 mb-6">
+                <div className="pt-4 border-t border-foreground/5">
+                  <div className="flex items-center gap-3 mb-3">
                     <DollarSign className="w-5 h-5 text-primary" />
                     <h3 className="text-lg font-black text-[#1e293b]">السعر</h3>
                   </div>
@@ -409,7 +409,7 @@ const AddProductClient = () => {
                 </div>
 
                 {/* Submit Action Block */}
-                <div className="pt-8 border-t border-foreground/5">
+                <div className="pt-4 border-t border-foreground/5">
                    <button type="submit" className="w-full bg-primary text-white py-5 rounded-[20px] font-black text-base shadow-xl shadow-primary/20 hover:bg-primary/90 hover:-translate-y-1 active:translate-y-0 transition-all flex items-center justify-center gap-3 group">
                       <CheckCircle2 className="w-6 h-6 group-hover:scale-110 transition-transform" />
                       <span>حفظ ونشر المنتج</span>
